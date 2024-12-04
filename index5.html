@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BONDGET</title>
+  <link rel="stylesheet" href="style5.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+<body>
+  <!-- Container -->
+  <div class="container">
+    <header>
+        <a href="#" id="logo"
+          >BONDGET <i class="fa-duotone fa-solid fa-tractor"></i
+        ></a>
+
+        <!--cart button-->
+        <button id="cartBtn">
+          <i
+            class="fa-sharp fa-solid fa-basket-shopping"
+            data-quantity="0"
+            id="cart"
+          ></i>
+        </button>
+        <span class="cart-quantity" id="cart-quantity"></span>
+      </header>
+
+    <!-- Cart Section -->
+    <div id="cart-container" style="display: none;">
+      <div class="cart-container-header">
+        <h2>My Cart</h2>
+        
+      </div>
+      <div id="cart-items">
+        <!-- Dynamic Cart Items -->
+      </div>
+      <button id="closeCartBtn">Close</button>
+      <button id="checkoutbtn">Check-out (₦0)</button>
+    </div>
+
+    <!-- Items Section -->
+    <h1>ITEMS</h1>
+    <div class="main">
+      <figure>
+        <img src="images/basket.jpg" alt="Basket" />
+        <figcaption>Basket - ₦5,000</figcaption>
+        <button class="add-to-cart" data-id="1" data-price="5000" data-name="Basket">
+          Add to Cart
+        </button>
+      </figure>
+      <figure>
+        <img src="images/shovel.jpg" alt="Shovel" />
+        <figcaption>Shovel - ₦12,000</figcaption>
+        <button class="add-to-cart" data-id="2" data-price="12000" data-name="Shovel">
+          Add to Cart
+        </button>
+      </figure>
+      <figure>
+        <img src="images/bucket.jpg" alt="Bucket" />
+        <figcaption>Bucket - ₦3,500</figcaption>
+        <button class="add-to-cart" data-id="3" data-price="3500" data-name="Bucket">
+          Add to Cart
+        </button>
+      </figure>
+      <figure>
+        <img src="images/rake.jpg" alt="Rake" />
+        <figcaption>Rake - ₦14,000</figcaption>
+        <button class="add-to-cart" data-id="4" data-price="14000" data-name="Rake">
+          Add to Cart
+        </button>
+      </figure>
+      <figure>
+        <img src="images/trowel.jpg" alt="Trowel" />
+        <figcaption>Trowel - ₦5,000</figcaption>
+        <button class="add-to-cart" data-id="5" data-price="5000" data-name="Trowel">
+          Add to Cart
+        </button>
+      </figure>
+      <figure>
+        <img src="images/watering.jpg" alt="Watering Can" />
+        <figcaption>Watering Can - ₦5,400</figcaption>
+        <button class="add-to-cart" data-id="6" data-price="5400" data-name="Watering Can">
+          Add to Cart
+        </button>
+      </figure>
+      <figure>
+        <img src="images/pesticide.jpg" alt="Pesticide" />
+        <figcaption>Pesticide - ₦23,300</figcaption>
+        <button class="add-to-cart" data-id="7" data-price="23300" data-name="Pesticide">
+          Add to Cart
+        </button>
+      </figure>
+      <figure>
+        <img src="images/w.jpg" alt="Wheelbarrow" />
+        <figcaption>Wheelbarrow - ₦15,000</figcaption>
+        <button class="add-to-cart" data-id="8" data-price="15000" data-name="Wheelbarrow">
+          Add to Cart
+        </button>
+      </figure>
+    </div>
+  </div>
+
+  <script src="main5.js"></script>
+</body>
+</html>
